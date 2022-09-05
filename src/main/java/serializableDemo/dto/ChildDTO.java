@@ -9,11 +9,14 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 public class ChildDTO extends ParentDTO{
+    private  static  final  long serialVersionUID = 4;
     private String parentName;
+    private String description;
 
     @Builder(toBuilder = true)
-    public ChildDTO(String name, int age, String gender, String parentName) {
+    public ChildDTO(String name, int age, String gender, String parentName, String description) {
         super(name, age, gender);
         this.parentName = parentName;
+        this.description = description;
     }
 }

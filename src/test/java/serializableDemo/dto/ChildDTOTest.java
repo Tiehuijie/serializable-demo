@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class ChildDTOTest {
     @Test
     void should_get_file_info_success_when_parent_has_serializable_and_child_extend_parent() throws IOException, ClassNotFoundException {
-        generateByteStream();
+//        generateByteStream();
         FileInputStream fis = new FileInputStream("child.txt");
 
         ObjectInputStream oin = new ObjectInputStream(fis);
